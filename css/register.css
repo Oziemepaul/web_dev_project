@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: antiquewhite;
+    position: relative;
+}
+.main-section{
+    background: black;
+    width: 50%;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.main-section h1{
+    color: antiquewhite;
+    text-align: center;
+}
+.main-section label{
+    color: antiquewhite;
+}
+input{
+    width: 100%;
+    margin: 0.7rem 0;
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 0.3rem;
+    border: 1px solid var(--green_medium);
+}
+input:hover,input:focus{
+    border: 2px solid var(--grey_medium);
+    cursor: pointer;
+}
+input.invalid{
+    border: 2px solid antiquewhite;
+}
+.name-container{
+    display: flex;
+    gap: 1rem;
+}
+.name{
+    flex: 1;
+}
+button{
+    width: 100%;
+    margin: 0.7rem 0;
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 0.3rem;
+    border: 1px solid antiquewhite;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    cursor: pointer;
+}
+button.selected{
+    background: hsla(34, 78%, 91%, 0.3);
+    border: 1px solid var(--green_medium);
+}
+.query-container{
+    display: flex;
+    gap: 1rem;
+}
+.query{
+    flex: 1;
+}
+
+input[type = "submit"] {
+    background: grey;
+    color: black;
+    cursor: pointer;
+}
+/*input::placeholder{...statement } */
+.errors{
+    margin-bottom: 0.5rem;
+    color: red;
+}
+.success-container{
+    background: black;
+    width: 40%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-150%);
+    transition: all .4s ease-in-out;
+    border-radius: 1rem;
+}
+.success-header{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.success-header h2{
+    color: antiquewhite;
+}
+.success-container p{
+    color: antiquewhite;
+}
+@media(min-width:601px) and (max-width:800x){
+    .main-section{
+        width: 70%;
+    }
+}
+@media (max-width:600px){
+    .main-section{
+        width: 95%;
+    }
+    .name-container{
+        flex-direction: column;
+        gap: 0;
+    }
+    .query-container{
+        flex-direction: column;
+        gap: 0;
+    }
+}

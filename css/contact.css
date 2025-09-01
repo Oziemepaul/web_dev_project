@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: antiquewhite;
+    position: relative;
+}
+.main-section{
+    background: white;
+    width: 50%;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.main-section h1{
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+input{
+    width: 100%;
+    margin: 0.7rem 0;
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+}
+input:hover,input:focus{
+    border: 2px solid black;
+    cursor: pointer;
+}
+input.invalid{
+    border: 1px solid red;
+}
+.name-container{
+    display: flex;
+    gap: 1rem;
+}
+.name{
+    flex: 1;
+}
+textarea{
+    width: 100%;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: 7rem;
+    outline: none;
+    resize: none;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+textarea:hover,textarea:active{
+    border: 2px solid black;
+}
+textarea.invalid{
+    border: 1px solid red;
+}
+.consent-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+.consent-container > div{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+.consent-container div img{
+    display: none;
+}
+input[type = "submit"] {
+    background: black;
+    color: antiquewhite;
+    cursor: pointer;
+    font-weight: bolder;
+}
+/*input::placeholder{...statement } */
+.errors{
+    margin-bottom: 0.5rem;
+    color: var(--red);
+}
+.success-container{
+    background: black;
+    width: 40%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    transform: translateY(-150%);
+    transition: all .4s ease-in-out;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.success-header{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.success-header h2{
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.success-container p{
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+@media(min-width:601px) and (max-width:800x){
+    .main-section{
+        width: 70%;
+    }
+}
+@media (max-width:600px){
+    .main-section{
+        width: 95%;
+    }
+    .name-container{
+        flex-direction: column;
+        gap: 0;
+    }
+    .query-container{
+        flex-direction: column;
+        gap: 0;
+    }
+}

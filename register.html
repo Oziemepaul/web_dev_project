@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+      <div class="header_nav">
+        <h2>LEARNEASY</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="main-section">
+
+    <h1>Registration Form</h1>
+
+  <form id="myForm">
+    <div class="name-container">
+    <div class="name">
+      <label for="">First Name *</label>
+      <input type="text" id="firstname">
+      <p class="errors firstname_err"></p>
+    </div>
+    <div class="name">
+      <label for="">Last Name *</label>
+      <input type="text" id="lastname">
+      <p class="errors lastname_err"></p>
+    </div>
+  </div>
+  
+
+  <label for="">Email Address *</label>
+  <input type="text" id="email">
+  <p class="errors email_err"></p>
+
+  <label for="">Learning Mode *</label>
+  <div class="query-container">
+  <div class="query">
+    <button id="general_enquiry">On-line</button>
+    <p class="errors query_error"></p>
+  </div>
+  <div class="query">
+    <button id="support_requested">On-site</button>
+    <p class="errors"></p>
+  </div>
+  </div>
+  <div class="name-container">
+    <div class="name">
+      <label for="">Password *</label>
+      <input type="password" id="password">
+      <p class="errors password_err"></p>
+    </div>
+    <div class="name">
+      <label for="">Confirm Password *</label>
+      <input type="password" id="confirm_password">
+      <p class="errors confirm_password_err"></p>
+    </div>
+  </div>
+  <input type="submit">
+  </form>
+  </section>
+
+  <div class="success-container">
+    <div class="success-header">
+      <h2>Registertion Successful!</h2>
+    </div>
+    <p>Enjoy every step of your Learning journey.</p>
+  </div>
+
+  <script src="./js/register.js"></script>
+</body>
+</html>
