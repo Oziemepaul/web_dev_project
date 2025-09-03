@@ -121,4 +121,7 @@ input[type = "submit"] {
         flex-direction: column;
         gap: 0;
     }
+    .success-container{
+        width: 80%;
+    }
 }
