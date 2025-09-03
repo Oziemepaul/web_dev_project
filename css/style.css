@@ -296,6 +296,7 @@ main{
     }
     main{
     padding:0.5rem;
+    height: 100vh;
     }
     .main_content{
     width: 100%;
@@ -313,6 +314,11 @@ main{
     width: 100%;
     padding: 0 0.5rem;
     }
+    .main_content button{
+    padding: 0.5rem 1rem;
+        margin: 0.5rem 0.2rem;
+        margin-top: 0.2rem;
+    }    
     .courses{
     flex-direction: column;
     }
