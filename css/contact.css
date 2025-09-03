@@ -117,6 +117,9 @@ input[type = "submit"] {
     .main-section{
         width: 70%;
     }
+        .success-container{
+        width: 100%;
+    }
 }
 @media (max-width:600px){
     .main-section{
@@ -131,6 +134,6 @@ input[type = "submit"] {
         gap: 0;
     }
     .success-container{
-        width: 80%;
+        width: 100%;
     }
 }
