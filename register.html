@@ -13,6 +13,9 @@
     <header>
       <div class="header_nav">
         <h2>LEARNEASY</h2>
+        <div class="nav-img">
+          <img class="close" src="./assets/icon-menu.svg" alt="">
+        </div>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -80,6 +83,20 @@
     </div>
     <p>Enjoy every step of your Learning journey.</p>
   </div>
+  
+    <script>
+        const btn = document.querySelector(".close")
+         const nav = document.querySelector(".header_nav > nav")
+        btn.addEventListener("click", ()=>{
+            if (nav.style.display == "block"){
+                nav.style.display = "none";
+                btn.setAttribute("src", "./assets/icon-menu.svg")
+            }else {
+                nav.style.display = "block";
+                btn.setAttribute("src", "./assets/icon-close.svg")
+            }
+        })
+    </script>
 
   <script src="./js/register.js"></script>
 </body>

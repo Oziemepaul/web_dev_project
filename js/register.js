@@ -54,10 +54,11 @@ function validateForm(){
         password.classList.add("invalid")
         invalid = true
     } 
-    if (confirm_password.value == ""){
+    if (confirm_password.value !== password.value){
         confirm_password_err.textContent = "Password must be the same";
         confirm_password.classList.add("invalid");
         invalid = true
+
     }
 //form validation
     if(!invalid){
@@ -90,3 +91,4 @@ support_requested.onclick = () =>{
     general_enquiry.classList.remove("selected")
     isSelected = true
 }
+
